@@ -1,7 +1,7 @@
-IMAGE_NAME ?= dbellotti/smat-shell
+IMAGE_NAME ?= nwmahoney/konch
 IMAGE_VERSION ?= latest
 DOCKER_TAG := "$(IMAGE_NAME):$(IMAGE_VERSION)"
-CODE_DIR ?= /Users/db/Code
+CODE_DIR ?= /home/nick/workspace
 
 image:
 	docker build --tag $(DOCKER_TAG) .

@@ -1,3 +1,5 @@
+# nick's personal fork
+
 # konch (container shell)
 use docker to have your dev environment anywhere
 
@@ -6,7 +8,7 @@ if your performance is bad, make sure you allocate more cpus and memory in your 
 
 get the code
 ```
-git clone git@github.com:dbellotti/konch.git
+git clone git@github.com:nwmahoney/konch.git
 cd ./konch
 ```
 

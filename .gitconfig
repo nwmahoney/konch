@@ -1,15 +1,34 @@
 [user]
-  name = David Bellotti
-  email = dbellotti@gmail.com
+	email = nick.mahoney00@gmail.com
+	name = Nick Mahoney
 [core]
-  editor = nvim
-  pager = diff-so-fancy | less --tabs=4 -RFX
-[color]
-  diff = auto
-  status = auto
+	editor = nvim
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
-  co = checkout
-  st = status
-  lola = log --graph --decorate --pretty=oneline --abbrev-commit
-[diff-so-fancy]
-  markEmptyLines = false
+	co = checkout
+	ci = commit
+	br = branch
+	st = status
+	unstage = reset HEAD --
+	last = !git --no-pager log -1 HEAD
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lg = !git --no-pager log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+# would be nice to improve the colors but the recommended ones for diff-so-fancy
+# don't look very nice with solarized-light...
+# https://github.com/so-fancy/diff-so-fancy
+# [color]
+# 	ui = true
+# [color "diff-highlight"]
+# 	oldNormal = red bold
+# 	oldHighlight = red bold 52
+# 	newNormal = green bold
+# 	newHighlight = green bold 22
+# [color "diff"]
+# 	meta = 11
+# 	frag = magenta bold
+# 	commit = yellow bold
+# 	old = red bold
+# 	new = green bold
+# 	whitespace = red reverse
